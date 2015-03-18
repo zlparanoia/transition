@@ -1,0 +1,56 @@
+.button {
+	display: block;
+	margin: 0 auto;
+	border: 2px solid #ccc;
+	width: 150px;
+	height: 30px;
+	position: relative;
+}
+.button .line {
+	position: absolute;
+	display: block;
+	transition: 0.4s ease;
+}
+.button:hover .line {
+	background: #aaa;
+}
+.button .line-top{
+	height: 2px;
+	left: -110%;
+	top: -2px;
+	width: 0;
+}
+.button:hover .line-top{
+	width: 100%;
+	left: -2px;
+}
+.button .line-right{
+	height: 0px;
+	top: -200%;
+	right: -2px;
+	width: 2px;
+}
+.button:hover .line-right{
+	height: 100%;
+	top: -2px;
+}
+.button .line-bottom{
+	height: 2px;
+	left: 200%;
+	top: 30px;
+	width: 0;
+}
+.button:hover .line-bottom{
+	width: 100%;
+	left: -2px;
+}
+.button .line-left{
+	height: 0px;
+	top: 200%;
+	left: -2px;
+	width: 2px;
+}
+.button:hover .line-left{
+	height: 100%;
+	top: -2px;
+}
